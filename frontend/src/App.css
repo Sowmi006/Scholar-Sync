@@ -1,0 +1,217 @@
+:root {
+  --primary-color: #3498db; /* adjust to match your logo */
+  --secondary-color: #2c3e50;
+  --background-color: #f0f2f5;
+  --card-bg: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  width: 180px;
+  border-radius: 20px; /* rounded corners */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.App-header {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+.page-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.auth-container {
+  text-align: center;
+}
+
+.auth-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.auth-nav button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.auth-nav .active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth-form button {
+  margin-top: 12px;
+  padding: 12px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 40px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background-color);
+}
+
+.App-logo {
+  width: 180px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.role-buttons button {
+  margin: 10px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.role-buttons button:hover {
+  background: #2980b9;
+}
+
+.auth-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.auth-nav button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.auth-nav .active {
+  background: var(--primary-color);
+  color: white;
+}
+/* Fade-in effect */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade-out effect */
+.fade-out {
+  animation: fadeOut 0.8s ease forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

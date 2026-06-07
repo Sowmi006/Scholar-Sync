@@ -1,0 +1,104 @@
+/* Role Selection Styles */
+.role-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f2f5 0%, #ecf0f1 100%);
+  padding: 20px;
+}
+
+.role-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  animation: slideDown 0.6s ease-out;
+}
+
+.role-selection h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 50px;
+  text-align: center;
+  animation: fadeInText 0.8s ease-out 0.3s both;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeInText 0.8s ease-out 0.6s both;
+}
+
+.role-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.student-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.student-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
+}
+
+.provider-button {
+  background-color: #27ae60;
+  color: white;
+}
+
+.provider-button:hover {
+  background-color: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(39, 174, 96, 0.4);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .role-selection h2 {
+    font-size: 22px;
+  }
+
+  .role-button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .button-container {
+    gap: 15px;
+  }
+}
